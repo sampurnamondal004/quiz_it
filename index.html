@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container text-center mt-5 pt-3 pb-4">
+
+<!-- Title -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Harry Potter Trivia</h1>
+                <h4>How well do you know the Harry Potter series?</h4>
+                <div class="progress hide mt-4">
+                    <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0"
+                        aria-valuemax="100">0%</div>
+                </div>
+            </div>
+        </div>
+
+<!-- Button -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <a href="#" class="btn btn-lg btn-primary" id="start-btn">Start</a>
+            </div>
+        </div>
+
+<!-- Timer -->
+        <div class="row hide mt-4" id="timer-section">
+            <div class="col-md-12">
+                <p><span class="fas fa-hourglass-half"></span>Time Remaining: <span id="timer">00:30</span></p>
+            </div>
+        </div>
+
+<!-- Question Area -->
+        <div class="row hide mt-4" id="question-section">
+            <div class="col-md-12">
+                <h3 id="question">Which creatures pull the carriages that take students from the Hogwarts Express to the Castle?</h3>
+                <p class="possible-answer">Hippogriffs</p>
+                <p class="possible-answer">Thestrals</p>
+                <p class="possible-answer">Centaurs</p>
+                <p class="possible-answer">Manticores</p>
+            </div>
+        </div>
+
+<!-- Right / Wrong follow up -->
+        <div class="row message hide">
+            <div class="col-md-12">
+                <h3 id="right-wrong-message">Bollocks!</h3>
+                <p id="correct-answer-p" class="hide">The Correct Answer was: <span id="right-answer-is"></span></p>
+                <img id="img-message" class="img-fluid" src="" />
+            </div>
+        </div>
+
+<!-- End Screen Section -->
+        <div class="row end-screen hide mt-4">
+            <div class="col-md-12">
+                <h3 class="mb-4">Here's how you did:</h3>
+                <p>Correct Answers: <span id="right"></span></p>
+                <p>Incorrect Answers: <span id="wrong"></span></p>
+                <p>Unanswered Answers: <span id="unanswered"></span></p>
+                <a href="#" class="btn btn-lg btn-primary mt-2" id="start-over-btn">Start over?</a>
+            </div>
+        </div>
+
+    </div> <!-- end container -->
+    
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>
